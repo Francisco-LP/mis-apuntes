@@ -1,0 +1,57 @@
+:sourse .vimrc carga el archivo y aplica los cambios 
+
+:set runtimepath   muestra la  lista de los directorios donde busca vim los archivos de configuracion
+
+:noh queta el resalte de una busqueda 
+
+## guardar y salir
+
+:w  guarda los cambios en el archivo
+:q  sale del archivo
+:q! fuerza salida, descartando posibles cambio no guardados
+:wq guarda y sale del archivo
+
+
+## desacer, rehacer, acopiar, cortar, pegar, seleccionar, crear
+
+desacer: u
+rehacer: crtl + r 
+
+cortar: d
+cortar toda la liena: dd
+cortar un numero de lineas: d+num y d+num+d (ejemplo d + 2  corta la linea donde esta el cursor + 2 lineas
+pero si useo: d2d corta las 2 lineas que estan abajo del donde se encuentra el cursor)
+
+copiar: y
+copiar toda la linea: yy
+copiar un numero de lineas: y+num y y+num+y (ejemplo y + 2  corta la linea donde esta el cursor + 2 lineas pero si uso y2y copia el numero de lineas que esta abajo de donde se encuentra el cursor)
+
+pegar: p   pega la linea debajo de donde esta el cursor
+
+seleccionar: v
+
+crear una linea nueva: o    crea la linea nueva debajo de donde esta el cursor e ingresa al modo insertar
+
+
+## moverse por el archivo
+
+arriba: k
+abajo: j
+izquierda: h
+derecha: l
+
+ !tambien se pueden usar las flechas¡
+
+ir al final de una palabra: e
+ir al principio de una palabra: b
+
+ir final de una linea: mayus + $
+ir principio de una linea: 0
+
+ir al final del archivo: mayus + g
+ir al principio de un archivo: gg
+
+## buscar texto
+
+buscar una palabra: /+texto   y con n  se avanza a la siguiente busqueda encontrada y retroceder es shift+n
+

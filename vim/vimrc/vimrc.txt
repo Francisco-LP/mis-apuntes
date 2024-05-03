@@ -1,0 +1,74 @@
+" NOTA: Este es el archivo de configuracion de vim, el archivo se guarda en la carpeta /home. y el nombre del archivo es .vimrc (cambiar nombre)
+
+" PLUGING VIM-PLUG
+call plug#begin('~/.vim/plugged')
+
+"syntaxys 
+Plug 'sheerun/vim-polyglot'
+
+" TEMAS 
+" Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'NLKNguyen/papercolor-theme'
+
+" Barra inferior
+Plug 'vim-airline/vim-airline'
+
+" TIPIFICACIÓN
+"al crear un parentesis crea el otro automaticamente y pone el cursor en medio
+Plug 'jiangmiao/auto-pairs'
+" al crear una etiquita ej en html la cierra automaticamente
+Plug 'alvan/vim-closetag'
+
+" AUTOCOMPLETAR
+Plug 'sirver/ultisnips'
+"Plug 'neoclide/coc.vim', {'branch': 'release'}
+
+call plug#end()
+
+" configuracion del tema paperColor
+set t_Co=256
+colorscheme PaperColor
+
+
+" CONFIGURACION BASICA
+" activa la sintaxis
+syntax on
+
+" muestra numeros de lineas en el margen izquierdo
+set number
+
+" ajusta los colores del tema de vim (dark o light)
+set background=dark
+
+" activa el raton
+set mouse=a
+
+" activa
+set encoding=utf-8
+
+" numero de espacios en las tabulaciones
+set tabstop=2
+
+" numero de espacios que se usa en la identacion
+set shiftwidth=2
+
+" identa automaticamente las nuevas lineas de forma inteligente
+set smartindent
+
+" realiza una búsqueda incremental, mostrando coincidencias a medida que se
+" escribe "
+set incsearch
+
+" muestra el paréntesis correspondiente cuando se inserta uno y resalta el si no ce cierra
+set showmatch
+
+" puede deshacer, para deshacer cambios incluso despúes de cerrar y abrir el archivo
+set undofile
+
+" habilita la revisión ortográfica set spell
+
+" establece el idioma de la revisión ortográfica set spelllang=es
+" divide la venta en 2 a la izquierda para navegar entre carpetas y a la
+" derecha el archivo abierto
+nnoremap <c-b> :Vex<cr>vertical 30<cr>
+inoremap <c-p> <Esc>:Vex<cr>vertical 30<cr>

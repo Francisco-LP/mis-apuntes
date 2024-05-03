@@ -1,0 +1,28 @@
+## Instalación 
+
+instalacion: sudo dnf install vim
+
+configuracion: en la carpera /home se cre el archivo .vimrc en cual escriben las configuraciones personalizada de vim 
+
+## Instalacion de pluggins
+
+para instalar los plugins se necesita un administrador de plugins como Plug-vim 
+
+instalacion de Plug-vim: https://github.com/junegunn/vim-plug
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+luego en el archivo .vimrc instalar los plugins con = :PlugInstall
+
+
+## Configurando Coc.vim
+
+una vez instalado Coc.vim se deben instalar los lenguajes que uno quiera que se soporten
+
+:CocInstall coc-sh        " Para Bash scripting
+:CocInstall coc-python    " Para Python
+:CocInstall coc-rls       " Para Rust (utiliza Rust Language Server)
+:CocInstall coc-tsserver  " Para JavaScript y TypeScript (utiliza TypeScript language server)
+:CocInstall coc-html      " Para HTML
+:CocInstall coc-css       " Para CSS
